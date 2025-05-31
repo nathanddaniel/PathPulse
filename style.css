@@ -96,6 +96,18 @@ body.light-mode .topnav a:hover {
     /* opacity: 1; */
 }
 
+
+/* Page Format */
+
+.page-content {
+    padding-left: 40px;
+}
+
+.page-header {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
 /* Dashboard Page Styling */
 .dashboard-container {
     padding: 1rem 2rem;
@@ -156,16 +168,41 @@ body.light-mode .topnav a:hover {
   align-items: center;
 }
 
+/* Run History Page */
 
-/* Page Format */
-
-.page-content {
-    padding-left: 40px;
+table, th, td {
+  border: solid;
+  justify-content: center;
 }
 
-.page-header {
-    padding-left: 40px;
-    padding-top: 10px;
+table {
+  border: 1px solid;
+  width: 50%;
+  margin: 40px;
+  border-collapse: collapse;
+  border-spacing: 15px;
+  border-color: #0e1018;
+}
+
+th, td {
+  padding: 20px 80px;
+  text-align: center;
+  border-color: #0e1018;
+  
+}
+
+th {
+  background-color: #a6e3e9;
+  color: #0e1018;
+}
+
+tr {
+  
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  color: #0e1018; 
 }
 
 
