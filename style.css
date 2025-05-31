@@ -224,11 +224,27 @@ tr:nth-child(even) {
   transition: width 0.3s ease; /* Smooth transition */
 }
 
-.badge {
-  display: inline-block;
-  padding: 10px 0px 0px 40px;
+
+.badges-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin: 0 auto;
 }
 
+.badge img {
+  width: 80px;
+  height: auto;
+}
+
+.badge.locked img {
+  opacity: 0.4;
+  filter: grayscale(100%) blur(1px);
+  pointer-events: none; /* makes it non-interactive */
+}
 
 /* Settings Page styling */
 
