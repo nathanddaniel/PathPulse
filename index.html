@@ -20,7 +20,7 @@
 
   <main>
     <section id="dashboard" class="page">
-        <h1 id="">Dashboard Content</h1>
+        <h1 class="page-content">Your Run Today</h1>
         <div class="dashboard-container">
             <div id="map" class="map-container"></div>
             <div class="summary-cards">
@@ -45,15 +45,56 @@
     </section>
 
     <section id="history" class="page hidden">
-        <h1>Run History</h1>
+        <h1 class="page-content">Run History</h1>
+        <table>
+            <th>Date</th>
+            <th>Distance</th>
+            <th>Duration</th>
+            <th>Pace</th>
+        </table>
     </section>
 
     <section id="goals" class="page hidden">
-        <h1>User Goals</h1>
+        <h1 class="page-content">User Goals</h1>
     </section>
 
     <section id="settings" class="page hidden">
-        <h1>Settings</h1>
+        <h1 class="page-content">Settings</h1>
+        <h3 class="page-header">User Profile</h3>
+        
+        <form id="settings-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" name="weight">
+
+            <label for="height">Height (cm)</label>
+            <input type="number" id="height" name="height">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+
+            <button type="submit">Save Settings</button>
+        </form>
+
+        <section id="reset-section">
+            <h3 class="page-header">Reset Data</h3>
+            <div class="button-group">
+                <button class="secondary-btn">Clear Run History</button>
+                <button class="secondary-btn">Clear User Goals</button>
+            </div>
+        </section>
+
+        <section id="export-section">
+            <h3 class="page-header">Export User Data</h3>
+            <div class="button-group">
+                <button class="secondary-btn">Export Run History</button>
+                <button class="secondary-btn">Export All</button>
+            </div>
+        </section>
+
+
     </section>
   </main>
   <script src="theme-toggle.js"></script>
