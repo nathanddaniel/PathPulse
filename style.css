@@ -224,6 +224,11 @@ tr:nth-child(even) {
   transition: width 0.3s ease; /* Smooth transition */
 }
 
+.badge {
+  display: inline-block;
+  padding: 10px 0px 0px 40px;
+}
+
 
 /* Settings Page styling */
 
