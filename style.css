@@ -96,7 +96,7 @@ body.light-mode .topnav a:hover {
     /* opacity: 1; */
 }
 
-/* Dashboard Styling */
+/* Dashboard Page Styling */
 .dashboard-container {
     padding: 1rem 2rem;
 }
@@ -141,6 +141,19 @@ body.light-mode .topnav a:hover {
 .card .unit {
   font-size: 1rem;
   font-weight: normal;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background-color: #1c2430;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
