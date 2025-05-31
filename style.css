@@ -216,18 +216,26 @@ tr:nth-child(even) {
 .progress-bar {
   width: 300px;
   height: 20px;
-  background-color: #f0f0f0;
+  background-color: #3e506b;
   border-radius: 10px;
   overflow: hidden;
   margin: 20px 0px 0px 40px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .progress {
   height: 100%;
-  background-color: #4CAF50;
-  width: 0%; /* Initial progress */
+  background-color: #20a0a0;
+  width: 0%; 
   border-radius: 10px;
-  transition: width 0.3s ease; /* Smooth transition */
+  transition: width 0.3s ease; 
+}
+
+.progress-label {
+  margin-left: 40px;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #a0a0a0;
 }
 
 
