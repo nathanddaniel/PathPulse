@@ -152,7 +152,7 @@
         <h1 class="page-header">Unlocked Completion Badges</h1>
 
         <div class="badges-bar">
-            <div class="badge">
+            <div class="badge" title="Run 10 times to unlock">
                 <img src="./assets/user-goals/10-5kBadges.png" alt="10 Runs Badge">
             </div>
 
@@ -201,10 +201,19 @@
             </div>
         </div>
 
-        <br>
-
         <div class="goal-forms">
             <h1 class="page-header">User Goals Form</h1>
+
+            <form id="settings-form">
+            <label for="weekly-distance">Weekly Distance Goal (km)</label>
+            <input type="number" id="weekly-distance" name="weekly-distance">
+
+            <label for="monthly-distance">Monthly Consistency Goal (km)</label>
+            <input type="number" id="monthly-distance" name="monthly-distance">
+
+            <button type="submit">Save Settings</button>
+        </form>
+
         </div>
 
     </section>
