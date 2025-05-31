@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             const targetPage = this.getAttribute('data-page');
 
-            // Show correct page
             pages.forEach(page => {
                 if (page.id === targetPage) {
                     page.classList.add('active');
@@ -18,9 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            // Highlight the correct nav item
             links.forEach(l => l.classList.remove('active'));
             this.classList.add('active');
         });
     });
+
+    const defaultTab = document.querySelector('.topnav a[data-page="dashboard"]');
+    defaultTab?.click(); 
 });
